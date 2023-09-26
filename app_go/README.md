@@ -1,3 +1,4 @@
+[![Go Workflow](https://github.com/vladislav5ik/core-course-labs/actions/workflows/golang.yml/badge.svg)](https://github.com/vladislav5ik/core-course-labs/actions/workflows/golang.yml)
 # Time-app
 
 Time-app is a Go web application that displays the current time in Moscow.
@@ -22,16 +23,22 @@ docker pull vladspigin/timeapp-go:latest
 ### Run
 Make sure Golang is installed before running app. No additional packages are required.
 ```
-go run main.go
+go run timeapp.go
 ```
 Now you can open `http://127.0.0.1:3000/` in your browser to check the time. Also you can specify another port using enviromental vriable `APP_PORT`.
 ```
-APP_PORT=7777 go run main.go
+APP_PORT=7777 go run timeapp.go
 ```
 
 ### Development
 
 Install pre-commit to automatically lint files.
+
+### Unit Tests
+Run tests:
+```
+go test
+```
 
 ## Contributing
 
